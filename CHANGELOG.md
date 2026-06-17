@@ -6,6 +6,15 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ## [Unreleased]
 
+### Changed
+
+- Prioridade do filtro `query_loop_block_query_vars` alterada para 20 (compatibilidade com Advanced Query Loop e extensões similares).
+- Hooks públicos `uqle_query_loop_post__not_in` e `uqle_should_track_query_block` para integrações de terceiros.
+
+### Added
+
+- Documentação de compatibilidade em `docs/COMPATIBILITY.md`.
+
 ## [1.0.0] - 2026-06-16
 
 ### Added

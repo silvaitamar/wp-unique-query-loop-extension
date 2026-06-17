@@ -15,6 +15,12 @@ Adiciona o atributo `uniqueOnPage` e o controle **Tornar posts únicos na págin
 - WordPress 6.7+
 - PHP 7.4+
 
+## Compatibilidade
+
+Testado com variações do [Advanced Query Loop](https://wordpress.org/plugins/advanced-query-loop/) na mesma página. Variações de `core/query` permanecem compatíveis porque o plugin estende o bloco nativo e usa os mesmos hooks oficiais.
+
+Detalhes: [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
+
 ## Instalação
 
 ### WordPress.org (após publicação)
@@ -24,8 +30,8 @@ Instale pelo painel **Plugins → Adicionar novo** ou baixe em [wordpress.org/pl
 ### Desenvolvimento
 
 ```bash
-git clone https://github.com/silvaitamar/unique-query-loop-extension.git
-cd unique-query-loop-extension
+git clone https://github.com/silvaitamar/wp-unique-query-loop-extension.git
+cd wp-unique-query-loop-extension
 composer install
 npm install
 npm run build

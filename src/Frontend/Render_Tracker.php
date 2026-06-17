@@ -46,6 +46,16 @@ class Render_Tracker {
 			return $pre_render;
 		}
 
+		/**
+		 * Permite que integrações condicionem o rastreamento (ex.: variações de Query Loop).
+		 *
+		 * @param bool  $track        Se o loop deve participar do registro de IDs.
+		 * @param array $parsed_block Bloco parseado do core/query.
+		 */
+		if ( ! \apply_filters( 'uqle_should_track_query_block', true, $parsed_block ) ) {
+			return $pre_render;
+		}
+
 		Rendered_Posts_Registry::begin_tracking();
 
 		return $pre_render;

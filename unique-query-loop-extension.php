@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Unique Query Loop Extension
- * Plugin URI:        https://github.com/silvaitamar/unique-query-loop-extension
+ * Plugin URI:        https://github.com/silvaitamar/wp-unique-query-loop-extension
  * Description:       Estende o bloco Query Loop com exclusão de posts duplicados na mesma página.
  * Version:           1.0.0
  * Requires at least: 6.7

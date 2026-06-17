@@ -57,6 +57,10 @@ The `query_loop_block_query_vars` filter runs on the front end. The editor previ
 
 No. Only loops with **Make posts unique on page** enabled register and exclude posts.
 
+= Does this work with Advanced Query Loop or other Query Loop variations? =
+
+Yes. Variations register on the native `core/query` block. This plugin extends the same block and uses official render hooks, so it works alongside extensions like Advanced Query Loop.
+
 == Screenshots ==
 
 1. Toggle control in the Query Loop sidebar (coming soon).

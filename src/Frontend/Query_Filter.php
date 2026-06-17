@@ -22,7 +22,8 @@ class Query_Filter {
 	 * @return void
 	 */
 	public static function register(): void {
-		\add_filter( 'query_loop_block_query_vars', array( self::class, 'filter_query_vars' ), 10, 3 );
+		// Prioridade 20: executar após extensões comuns (ex.: Advanced Query Loop em 10).
+		\add_filter( 'query_loop_block_query_vars', array( self::class, 'filter_query_vars' ), 20, 3 );
 	}
 
 	/**
@@ -37,13 +38,22 @@ class Query_Filter {
 	 * @return array<string, mixed>
 	 */
 	public static function filter_query_vars( array $query, \WP_Block $block, int $page ): array {
-		unset( $block, $page );
+		unset( $page );
 
 		if ( ! Rendered_Posts_Registry::is_tracking() ) {
 			return $query;
 		}
 
 		$rendered_ids = Rendered_Posts_Registry::get_ids();
+
+		/**
+		 * Permite que plugins de extensão do Query Loop ajustem os IDs excluídos.
+		 *
+		 * @param int[]               $rendered_ids IDs já renderizados na página.
+		 * @param array<string,mixed> $query        Argumentos atuais da WP_Query.
+		 * @param \WP_Block           $block        Instância do bloco post-template.
+		 */
+		$rendered_ids = \apply_filters( 'uqle_query_loop_post__not_in', $rendered_ids, $query, $block );
 
 		if ( empty( $rendered_ids ) ) {
 			return $query;
