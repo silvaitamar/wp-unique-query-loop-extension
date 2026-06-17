@@ -9,7 +9,7 @@ Guia interno para publicação no [WordPress.org Plugin Directory](https://wordp
 | **GitHub** (`silvaitamar/unique-query-loop-extension`) | Fonte da verdade: código, issues, PRs, tags, releases |
 | **WordPress.org SVN** | Distribuição oficial: `trunk/` (desenvolvimento) e `tags/X.Y.Z/` (estável) |
 
-O site do cliente (ex.: Instinto Canino) consome o plugin; **não** é o repositório do plugin.
+O repositório GitHub do plugin é a **fonte do produto**. Sites e projetos que o consomem mantêm histórico separado.
 
 ## Versionamento (SemVer)
 

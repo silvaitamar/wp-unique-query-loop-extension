@@ -61,7 +61,7 @@ add_filter( 'uqle_should_track_query_block', function ( bool $track, array $pars
 
 | Cenário | Prioridade | Notas |
 |---------|------------|-------|
-| Múltiplos loops AQL + `uniqueOnPage` | ✅ Validado (Home) | Caso principal |
+| Múltiplos loops AQL + `uniqueOnPage` | ✅ Validado | Cenário com variações AQL na mesma página |
 | AQL com `inherit: true` | ⚠️ Testar | AQL pode substituir `$wp_query`; exclusão via `query_loop_block_query_vars` pode não aplicar — candidato a v1.1 |
 | AQL com cache (`enable_caching`) | ⚠️ Testar | Transients podem servir resultados sem `post__not_in` atualizado |
 | Query Loop nativo (sem namespace) | Testar | Deve funcionar igual |

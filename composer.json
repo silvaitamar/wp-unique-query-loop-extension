@@ -1,5 +1,5 @@
 {
-	"name": "instinto-canino/unique-query-loop-extension",
+	"name": "silvaitamar/wp-unique-query-loop-extension",
 	"description": "Estende o bloco Query Loop com exclusão de posts duplicados na mesma página.",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
