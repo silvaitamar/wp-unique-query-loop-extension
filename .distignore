@@ -8,6 +8,7 @@
 .distignore
 node_modules/
 vendor/
+scripts/
 package.json
 package-lock.json
 npm-install.log
@@ -16,5 +17,6 @@ composer.lock
 docs/
 src/index.js
 *.md
+*.zip
 !readme.txt
 languages/.gitkeep
