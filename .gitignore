@@ -4,6 +4,8 @@
 .DS_Store
 *.zip
 npm-install.log
+.phpunit.result.cache
+.phpcs.cache
 
 # Artefatos locais de release (o ZIP é gerado pelo script/CI)
 unique-query-loop-extension.zip

@@ -9,11 +9,15 @@
 node_modules/
 vendor/
 scripts/
+tests/
 package.json
 package-lock.json
 npm-install.log
 composer.json
 composer.lock
+phpcs.xml.dist
+phpunit.xml.dist
+.phpunit.result.cache
 docs/
 src/index.js
 *.md

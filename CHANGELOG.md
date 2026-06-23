@@ -12,10 +12,13 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 - Prioridade do filtro `query_loop_block_query_vars` alterada para 20 (compatibilidade com Advanced Query Loop e extensões similares).
 - Hooks públicos `uqle_query_loop_post__not_in` e `uqle_should_track_query_block` para integrações de terceiros.
 - Revisão da documentação pública: README unificado, `readme.txt` sem referências prematuras, guia de release removido do repositório.
+- Código-fonte PHP normalizado para o WordPress Coding Standards.
 
 ### Added
 
 - Tradução pt_BR empacotada em `languages/` (`.pot`, `pt_BR.po`/`.mo` e o `.json` de tradução do script do editor).
+- Testes unitários (PHPUnit) do `Rendered_Posts_Registry`.
+- Verificação de padrões (PHPCS/WordPress Coding Standards) e workflow de CI no GitHub Actions (lint + testes).
 - Documentação de compatibilidade em `docs/COMPATIBILITY.md`.
 - Seções de limitações conhecidas: "Herdar consulta do modelo" (`inherit: true`) e preview do editor.
 - Compatibilidade com cache de página (full-page cache) validada e documentada.
@@ -25,6 +28,7 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 ### Fixed
 
 - Pacote de distribuição passa a incluir as classes PHP de `src/` (antes excluídas pelo `.distignore`), corrigindo erro fatal na ativação a partir do ZIP. O script de release agora valida a presença de `src/Plugin.php`.
+- Empacotamento: `scripts/`, `tests/`, configs de CI e ZIPs antigos não são mais incluídos no pacote de distribuição.
 
 ## [1.0.0] - 2026-06-16
 
