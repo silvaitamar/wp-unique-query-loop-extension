@@ -6,6 +6,10 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ## [Unreleased]
 
+### Added
+
+- Tradução para Espanhol (es_ES) empacotada em `languages/` (`es_ES.po`/`.mo` e o `.json` de tradução do script do editor), tornando o plugin trilíngue (en, pt_BR, es_ES).
+
 ## [1.0.0] - 2026-06-23
 
 ### Added

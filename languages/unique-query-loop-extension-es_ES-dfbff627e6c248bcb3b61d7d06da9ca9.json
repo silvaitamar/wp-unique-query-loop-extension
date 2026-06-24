@@ -1,0 +1,23 @@
+{
+	"translation-revision-date": "2026-06-24 13:20:00+0000",
+	"generator": "manual",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "es_ES",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Unique posts on page": [
+				"Entradas únicas en la página"
+			],
+			"Make posts unique on page": [
+				"Hacer entradas únicas en la página"
+			],
+			"Prevents posts already shown in other Query Loops on the same page from appearing again.": [
+				"Evita que las entradas ya mostradas en otros Query Loop de la misma página vuelvan a aparecer."
+			]
+		}
+	}
+}

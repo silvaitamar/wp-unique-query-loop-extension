@@ -1,0 +1,32 @@
+# Translation of Unique Query Loop Extension in Spanish (Spain)
+# This file is distributed under the same license as the Unique Query Loop Extension plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Unique Query Loop Extension 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/silvaitamar/wp-unique-query-loop-extension/issues\n"
+"Last-Translator: Itamar Silva\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2026-06-21T23:10:00+00:00\n"
+"PO-Revision-Date: 2026-06-24T13:20:00+00:00\n"
+"X-Generator: manual\n"
+"X-Domain: unique-query-loop-extension\n"
+
+#. Panel title in the block editor sidebar.
+#: src/index.js:53
+msgid "Unique posts on page"
+msgstr "Entradas únicas en la página"
+
+#. Toggle control label in the block editor sidebar.
+#: src/index.js:60
+msgid "Make posts unique on page"
+msgstr "Hacer entradas únicas en la página"
+
+#. Toggle control help text in the block editor sidebar.
+#: src/index.js:64
+msgid "Prevents posts already shown in other Query Loops on the same page from appearing again."
+msgstr "Evita que las entradas ya mostradas en otros Query Loop de la misma página vuelvan a aparecer."
